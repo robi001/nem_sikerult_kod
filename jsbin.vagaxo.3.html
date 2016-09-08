@@ -1,0 +1,42 @@
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2016 by robi001 (http://jsbin.com/vagaxo/3/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<HTML>
+  
+  <HEAD>
+  </HEAD>
+  
+  <BODY>
+  <script id="jsbin-javascript">
+
+function colorClock(){
+  var date = new Date();
+  var hours = date.getHours();
+  var minutes = date.getMinutes();
+  var seconds = date.getSeconds();
+
+  if (hours <= 9) {
+    hours = '0' + hours;
+  }
+  if (minutes <= 9) {
+    minutes = '0' + minutes;
+  }
+  if (seconds <= 9) {
+    seconds = '0' + seconds;
+  }
+
+  var clockFace = hours + ':' + minutes + ':' + seconds;
+
+  document.getElementById('clock').innerHTML = clockFace;
+}
+colorClock();
+</script>
+</BODY>
+  
+</HTML>
